@@ -3,6 +3,8 @@
 This workshop gives you a brief introduction of how to deploy a Java application step by step to openshift.  
 
 Pre-requirements:
+- Maven Version 3.0 or higher
+- Java 8
 - install Docker (if you run on Windows be aware if you are using docker on Hyper-v or with docker-machine/Virtualbox. Will weii provide some hints for docker-machine useres in the readmes) 
 - powershell if you are running on windows
 - install openshift client tools: https://developers.openshift.com/managing-your-applications/client-tools.html
