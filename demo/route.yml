@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Route
+metadata:
+  name: demo-route
+spec:
+  host: minishift.local
+  path: /
+  to:
+    kind: Service
+    name: demo-service

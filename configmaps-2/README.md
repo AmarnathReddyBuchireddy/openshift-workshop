@@ -21,16 +21,11 @@ There will be 2 users of 2 projects for two different staging environments:
 7. Create a new project: *oc new-project configmap-test*
 8. *oc create -f configmap-test.json*
 9. *oc create -f app-deployment.json*
-
-10.Login as admin: *oc login -u system:admin*
-11.Set rules: *oc create -f roles.json*
+10. Login as admin: *oc login -u system:admin*
+11. Set rules: *oc create -f roles.json*
 12. Assign rules: *oc adm policy add-role-to-user image-tagger developer -n configmap-test*
-
-
 13. Login in back as developer: *oc -u developer -p developer*
 14. Build the app as developer: *oc start-build node-app -n configmap-dev --from-dir=.. --follow*
-
-
 15. Get service $ROUTE-URL: *minishift openshift service list -n configmap-dev* --> find the frontend service url
 16. verify service: *curl $ROUTE-URL*
 

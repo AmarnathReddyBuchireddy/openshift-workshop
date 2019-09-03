@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: demo-ingress
+spec:
+  rules:
+  - host: demo.minikube.local
+    http:
+      paths:
+      - backend:
+          serviceName: demo-service
+          servicePort: 8080
+        path: /

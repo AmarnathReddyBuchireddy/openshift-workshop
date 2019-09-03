@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: workshop
+spec:
+  containers:
+  - name: demo
+    image: cy4n/hello:0.0.4
+    ports:
+    - containerPort: 8080
