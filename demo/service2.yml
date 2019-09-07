@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: demo-service2
+spec:
+  selector:
+    app: demo
+  type: ClusterIP
+  ports:
+  - port: 8080

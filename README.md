@@ -16,17 +16,26 @@ This workshop gives you a brief introduction of how to deploy a Java application
     
 -------------------------------
 
-- Step 1, is a simple Spring-boot CRUD application running locally, using a local mongodb instance
-- In Step 2, we start the application as a Docker container, together with a mongodb container, locally
-- In Step 3, we push the created Docker image to the openshift repository and deploy the mongodb and the application itself in openshift
-- In Step 4, we automate the deployment to openshift by using the fabric8 maven plugin. Additionally we customize the service & deployment descriptors
-- Step 5, demonstrates the usage of a custom Dockerfile together with the Fabric8 plugin
-- In Step 6 we split the application into a frontend a write and a read service
-- In Step 7 we add a second frontend and use a different approach for service discovery
-- In Step 8 and 9 we will look at config maps as a mechanism to externalize configuration.
-- In Step 10 we will use secrets to store sensitive data.
-- In Step 11 we will creat and use a template.
-- In Step 12 we will buildour own S2I builder image.
+- _Step 1_, is a simple Spring-boot CRUD application running locally, using a local mongodb instance
+- In _Step 2_, we start the application as a Docker container, together with a mongodb container, locally
+- In _Step 3_, we push the created Docker image to the openshift repository and deploy the mongodb and the application itself in openshift
+- In _Step 4_, we automate the deployment to openshift by using the fabric8 maven plugin. Additionally we customize the service & deployment descriptors
+- _Step 5_, demonstrates the usage of a custom Dockerfile together with the Fabric8 plugin
+- In _Step 6_ we split the application into a frontend a write and a read service
+- In _Step 7_ we add a second frontend and use a different approach for service discovery
+- In _Step 8_ and _Step 9_ we will look at config maps as a mechanism to externalize configuration.
+- In _Step 10_ we will use secrets to store sensitive data.
+- In _Step 11_ we will creat and use a template.
+- In _Step 12_ we will buildour own S2I builder image.
+
+- _demo_ contains a simple overall demo presenting the most important aspects such as pods, replicasets,
+  deployments, services and routes. _spring-boot-demo_ contains a possible Spring application, which contains
+  additional instable health access points to demonstrate monitoring and restarting facilities.
+- _s2i_ contains a small example for building a custom s2i builder image.
+. _templates_ contains a s,aöö example for creating a kubnernetes template.
+- _config,aüs-1/2_ contains example for creating configmaps including propagation of an image through stages
+  qith different configs.
+- _secrets_ contains an exercise for creating a secret and printing it's content in a container.
 
 
 ## Reset your installation:
